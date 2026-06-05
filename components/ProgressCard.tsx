@@ -20,8 +20,8 @@ export function ProgressCard({
       <CardHeader className="pb-4">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <CardTitle>Overall Onboarding Progress</CardTitle>
-            <p className="mt-1 text-sm text-slate-500">Current stage: {currentStage}</p>
+            <CardTitle>整体培训进度</CardTitle>
+            <p className="mt-1 text-sm text-slate-500">当前阶段：{currentStage}</p>
           </div>
           <div className="rounded-md bg-blue-50 p-2 text-blue-700">
             <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
@@ -33,14 +33,14 @@ export function ProgressCard({
           <span className="text-4xl font-semibold tracking-normal text-slate-950">
             {progress}%
           </span>
-          <span className="pb-1 text-sm text-slate-500">complete</span>
+          <span className="pb-1 text-sm text-slate-500">已完成</span>
         </div>
         <Progress value={progress} className="mt-5" />
         <div className="mt-5 grid grid-cols-2 gap-3">
           <div className="rounded-lg border bg-slate-50 p-3">
             <div className="flex items-center gap-2 text-sm font-medium text-slate-700">
               <CheckCircle2 className="h-4 w-4 text-emerald-600" aria-hidden="true" />
-              Tasks
+              任务
             </div>
             <p className="mt-2 text-2xl font-semibold text-slate-950">
               {completedTasks}/{totalTasks}
@@ -49,9 +49,9 @@ export function ProgressCard({
           <div className="rounded-lg border bg-slate-50 p-3">
             <div className="flex items-center gap-2 text-sm font-medium text-slate-700">
               <Clock3 className="h-4 w-4 text-blue-600" aria-hidden="true" />
-              Pace
+              节奏
             </div>
-            <p className="mt-2 text-2xl font-semibold text-slate-950">On track</p>
+            <p className="mt-2 text-2xl font-semibold text-slate-950">正常</p>
           </div>
         </div>
       </CardContent>

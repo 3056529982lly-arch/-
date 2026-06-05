@@ -2,82 +2,134 @@ export type SopItem = {
   title: string;
   description: string;
   category: string;
+  tags: string[];
   owner: string;
-  steps: number;
+  steps: string[];
   updated: string;
 };
 
 export const sopItems: SopItem[] = [
   {
-    title: "Amazon title writing",
-    description: "Rules for creating readable, keyword-aware titles that follow category requirements.",
+    title: "竞品分析流程",
+    description: "用于快速判断竞品强弱、价格带、卖点顺序和差异化机会。",
+    category: "竞品",
+    tags: ["竞品", "Listing", "数据复盘"],
+    owner: "运营",
+    updated: "2026年6月",
+    steps: [
+      "确定核心关键词和类目",
+      "搜索主关键词，选取3-5个同款或相近竞品",
+      "记录价格、评分、Review 数、BSR、主图风格、五点卖点顺序、A+模块",
+      "判断竞品强弱：价格、评价壁垒、图片专业度、卖点清晰度",
+      "输出差异化机会：功能、材质、件数、尺寸、说明书、包装、使用场景、售后"
+    ]
+  },
+  {
+    title: "标题优化流程",
+    description: "帮助新人写出关键词靠前、语义自然、无明显违规风险的标题。",
     category: "Listing",
-    owner: "Content",
-    steps: 7,
-    updated: "Jun 2026"
+    tags: ["Listing"],
+    owner: "内容",
+    updated: "2026年6月",
+    steps: [
+      "收集核心关键词、长尾词、场景词和属性词",
+      "分析竞品标题结构，找出高频主词和转化意图词",
+      "确定主关键词放在前半段，避免重复堆砌",
+      "按“品牌 + 核心关键词 + 核心卖点 + 属性规格 + 场景/人群”组合",
+      "检查字符数、促销词、侵权词、特殊符号、重复词、可读性",
+      "输出2-3个版本，并说明每版适合的定位"
+    ]
   },
   {
-    title: "Bullet point writing",
-    description: "Structure benefit-led bullet points with features, proof, use cases, and compliance checks.",
+    title: "五点描述写作流程",
+    description: "把产品卖点按买家决策顺序写成清晰、可信、可扫描的五点。",
     category: "Listing",
-    owner: "Content",
-    steps: 6,
-    updated: "Jun 2026"
+    tags: ["Listing"],
+    owner: "内容",
+    updated: "2026年6月",
+    steps: [
+      "提炼5个核心卖点，按照买家决策顺序排列",
+      "每点用清晰短标题开头，后面解释具体利益",
+      "自然融合关键词，不为关键词牺牲可读性",
+      "写事实，不写无法证明的绝对承诺",
+      "检查每点长度、语法、场景、规格和合规风险"
+    ]
   },
   {
-    title: "Main image optimization",
-    description: "Checklist for image clarity, product scale, white background rules, and review feedback.",
-    category: "Creative",
-    owner: "Design",
-    steps: 8,
-    updated: "May 2026"
+    title: "主图检查流程",
+    description: "检查主图是否真实、清晰、合规，并能在搜索结果中传递产品识别度。",
+    category: "图片",
+    tags: ["图片"],
+    owner: "设计",
+    updated: "2026年6月",
+    steps: [
+      "确认主图展示真实产品和真实配件",
+      "背景符合站点/类目要求，通常为纯白",
+      "产品占比足够，主体清晰，边缘无毛刺",
+      "无文字、图标、促销信息、水印、边框、色块",
+      "颜色、数量、尺寸比例与实物一致",
+      "保存原图、修图稿、最终图，便于追溯"
+    ]
   },
   {
-    title: "A+ content planning",
-    description: "Plan modules, comparison charts, brand story blocks, and design requirements.",
-    category: "Creative",
-    owner: "Design",
-    steps: 9,
-    updated: "May 2026"
+    title: "副图与 A+ 规划流程",
+    description: "把卖点转化为图片主题，形成移动端也能读懂的详情页内容。",
+    category: "A+",
+    tags: ["图片", "A+"],
+    owner: "设计",
+    updated: "2026年6月",
+    steps: [
+      "列出5个核心卖点",
+      "将卖点转化为图片主题：尺寸、细节、材质、功能、场景、包装、说明书",
+      "每张图只讲一个主要信息，文字短而清晰",
+      "A+按品牌故事、核心卖点、细节放大、场景展示、对比表、使用说明规划",
+      "检查移动端可读性，避免文字过小"
+    ]
   },
   {
-    title: "Competitor analysis",
-    description: "Capture competitor pricing, reviews, images, copy, feature gaps, and ranking indicators.",
-    category: "Research",
-    owner: "Operations",
-    steps: 10,
-    updated: "Jun 2026"
-  },
-  {
-    title: "Advertising keyword testing",
-    description: "Set test groups, evaluate search terms, control budget, and record optimization decisions.",
-    category: "Advertising",
+    title: "广告基础复盘流程",
+    description: "用曝光、点击、花费、销售额和 ACOS 判断广告下一步动作。",
+    category: "广告",
+    tags: ["广告", "数据复盘"],
     owner: "PPC",
-    steps: 8,
-    updated: "Jun 2026"
+    updated: "2026年6月",
+    steps: [
+      "查看曝光、点击、CTR、CPC、花费、订单、销售额、ACOS",
+      "判断问题：无曝光、无点击、无转化、花费过高、转化不稳定",
+      "下载搜索词报告，筛选高相关词、出单词、花费词、无关词",
+      "执行动作：加词、否词、调竞价、调预算、优化 Listing",
+      "记录动作日期，至少观察3-7天再判断"
+    ]
   },
   {
-    title: "Coupon setup",
-    description: "Prepare coupon type, discount range, eligible SKUs, budget cap, and launch verification.",
-    category: "Promotion",
-    owner: "Operations",
-    steps: 6,
-    updated: "May 2026"
+    title: "售后处理流程",
+    description: "把买家问题拆成责任类型、证据需求和合规处理方案。",
+    category: "售后",
+    tags: ["售后"],
+    owner: "客服",
+    updated: "2026年6月",
+    steps: [
+      "读取买家消息和订单信息",
+      "判断责任类型：物流、产品、买家误用、平台、清关或其他",
+      "确认是否需要照片、视频、缺件编号或物流截图",
+      "给出合规方案：补发、退款、退货、解释说明、开 CASE",
+      "记录处理结果和可复盘原因，反馈给产品、供应链或 Listing"
+    ]
   },
   {
-    title: "Refund handling",
-    description: "Review refund reason, confirm order details, document case notes, and escalate when needed.",
-    category: "After-sales",
-    owner: "Support",
-    steps: 5,
-    updated: "Jun 2026"
-  },
-  {
-    title: "Weekly data review",
-    description: "Review sales, sessions, conversion, advertising, inventory, and next-week action owners.",
-    category: "Analytics",
-    owner: "Operations",
-    steps: 9,
-    updated: "Jun 2026"
+    title: "周数据复盘流程",
+    description: "把销售、流量、转化、广告和库存问题沉淀为下周动作。",
+    category: "数据复盘",
+    tags: ["数据复盘"],
+    owner: "运营",
+    updated: "2026年6月",
+    steps: [
+      "拉取本周和上周核心数据",
+      "先看销售额和订单，再看 Sessions 和转化率",
+      "拆分自然问题与广告问题",
+      "找出出单产品、掉单产品、无单产品",
+      "每个重点产品输出“问题判断 + 原因 + 下周动作”",
+      "主管点评后沉淀为案例库"
+    ]
   }
 ];

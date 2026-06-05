@@ -4,8 +4,8 @@ import { Header } from "@/components/Header";
 import { Sidebar } from "@/components/Sidebar";
 
 export const metadata: Metadata = {
-  title: "Amazon Operations Onboarding",
-  description: "Training dashboard for Amazon operations onboarding."
+  title: "亚马逊新人运营培训系统",
+  description: "面向亚马逊美国站新人运营的内部培训看板。"
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-CN">
       <body className="font-sans">
         <div className="min-h-screen bg-slate-50">
           <Sidebar />

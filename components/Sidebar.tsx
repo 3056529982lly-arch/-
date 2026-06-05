@@ -9,18 +9,20 @@ import {
   FileText,
   GraduationCap,
   LayoutDashboard,
+  Library,
   Route,
   ShoppingBag
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigation = [
-  { name: "Dashboard", href: "/", icon: LayoutDashboard },
-  { name: "Training Roadmap", href: "/roadmap", icon: Route },
-  { name: "Amazon Modules", href: "/modules", icon: GraduationCap },
-  { name: "SOP Library", href: "/sop", icon: FileText },
-  { name: "Practice Tasks", href: "/tasks", icon: ClipboardCheck },
-  { name: "Quiz & Assessment", href: "/quiz", icon: BookOpenCheck }
+  { name: "首页看板", href: "/", icon: LayoutDashboard },
+  { name: "培训路线", href: "/roadmap", icon: Route },
+  { name: "课程模块", href: "/modules", icon: GraduationCap },
+  { name: "SOP流程", href: "/sop", icon: FileText },
+  { name: "实战任务", href: "/tasks", icon: ClipboardCheck },
+  { name: "测验考核", href: "/quiz", icon: BookOpenCheck },
+  { name: "案例库", href: "/cases", icon: Library }
 ];
 
 export function Sidebar() {
@@ -34,8 +36,8 @@ export function Sidebar() {
             <ShoppingBag className="h-5 w-5" aria-hidden="true" />
           </div>
           <div>
-            <p className="text-sm font-semibold text-slate-950">Amazon Ops Training</p>
-            <p className="text-xs text-slate-500">Onboarding dashboard</p>
+            <p className="text-sm font-semibold text-slate-950">亚马逊运营培训</p>
+            <p className="text-xs text-slate-500">精铺 / 半精品团队</p>
           </div>
         </div>
 
@@ -62,9 +64,9 @@ export function Sidebar() {
 
         <div className="mt-auto hidden border-t p-5 lg:block">
           <div className="rounded-lg bg-slate-50 p-4">
-            <p className="text-sm font-semibold text-slate-950">Week 2 Focus</p>
+            <p className="text-sm font-semibold text-slate-950">第2周重点</p>
             <p className="mt-1 text-sm leading-5 text-slate-600">
-              Research competitors, improve listings, and build better operating habits.
+              竞品分析、关键词提取、基础 Listing 文案和合规检查。
             </p>
           </div>
         </div>

@@ -1,73 +1,45 @@
+export type RoadmapStatus = "已完成" | "进行中" | "未开始";
+
 export type RoadmapStage = {
-  stage: number;
+  week: string;
   title: string;
-  description: string;
-  outcome: string;
-  status: "Completed" | "In Progress" | "Upcoming";
+  relatedCourses: string[];
+  coreOutputs: string[];
+  assessment: string;
+  status: RoadmapStatus;
 };
 
 export const roadmap: RoadmapStage[] = [
   {
-    stage: 1,
-    title: "Platform Basics",
-    description: "Learn Seller Central layout, navigation, account health, catalog tools, and team workflows.",
-    outcome: "Can locate daily operating tools without assistance.",
-    status: "Completed"
+    week: "第1周",
+    title: "平台基础与合规意识",
+    relatedCourses: ["第1课 亚马逊平台简介", "第2课 销售政策及卖家行为准则"],
+    coreOutputs: ["后台入口地图", "10个术语解释", "账号安全红线清单"],
+    assessment: "新人能找得到入口，知道哪些事不能碰。",
+    status: "已完成"
   },
   {
-    stage: 2,
-    title: "Product Research",
-    description: "Analyze products, competitors, reviews, ranking signals, and category opportunities.",
-    outcome: "Can prepare a simple product research brief.",
-    status: "In Progress"
+    week: "第2周",
+    title: "产品与 Listing 基础",
+    relatedCourses: ["第4课 产品上架技巧及 Listing 优化", "第9课 邮箱、链接与工具分享"],
+    coreOutputs: ["3个竞品分析表", "20个关键词", "3版标题", "1套五点描述"],
+    assessment: "能写出合规、自然、有卖点的基础文案。",
+    status: "进行中"
   },
   {
-    stage: 3,
-    title: "Listing Optimization",
-    description: "Draft titles, bullets, descriptions, search terms, and listing improvement notes.",
-    outcome: "Can audit and improve a product detail page.",
-    status: "Upcoming"
+    week: "第3周",
+    title: "图片、A+、促销与广告基础",
+    relatedCourses: ["第5课 亚马逊促销策略", "第6课 广告投放与优化"],
+    coreOutputs: ["7张副图规划", "A+草图", "广告观察表", "促销测试方案"],
+    assessment: "能把卖点转化成图片和广告测试思路。",
+    status: "未开始"
   },
   {
-    stage: 4,
-    title: "Product Images & A+ Content",
-    description: "Plan main images, lifestyle images, comparison graphics, and A+ module structure.",
-    outcome: "Can create an image and A+ content brief.",
-    status: "Upcoming"
-  },
-  {
-    stage: 5,
-    title: "Advertising Basics",
-    description: "Understand sponsored ads, keyword match types, budgets, bids, and performance metrics.",
-    outcome: "Can review a basic campaign report.",
-    status: "Upcoming"
-  },
-  {
-    stage: 6,
-    title: "Promotion & Pricing",
-    description: "Coordinate coupons, deals, price checks, discount timing, and promotional readiness.",
-    outcome: "Can prepare a promotion checklist.",
-    status: "Upcoming"
-  },
-  {
-    stage: 7,
-    title: "Orders, Logistics & After-sales",
-    description: "Track order issues, FBA inventory, buyer messages, refund requests, and support cases.",
-    outcome: "Can document and resolve standard operational issues.",
-    status: "Upcoming"
-  },
-  {
-    stage: 8,
-    title: "Data Analysis",
-    description: "Read business reports, traffic trends, conversion shifts, advertising results, and inventory data.",
-    outcome: "Can summarize weekly performance drivers.",
-    status: "Upcoming"
-  },
-  {
-    stage: 9,
-    title: "Weekly Review",
-    description: "Turn learning notes and operating data into next-week priorities and action items.",
-    outcome: "Can lead a structured weekly review.",
-    status: "Upcoming"
+    week: "第4周",
+    title: "售后、绩效、数据与复盘",
+    relatedCourses: ["第3课 卖家绩效与客服处理", "第7课 销售数据统计与分析", "第8课 防跟卖及申诉技巧"],
+    coreOutputs: ["售后案例表", "一周数据复盘", "下周优化计划", "申诉材料清单"],
+    assessment: "能用数据和政策语言说明问题。",
+    status: "未开始"
   }
 ];

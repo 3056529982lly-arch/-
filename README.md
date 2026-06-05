@@ -1,30 +1,22 @@
-# Amazon Operations Onboarding Dashboard
+# 亚马逊新人运营培训系统
 
-A clean Next.js training dashboard for onboarding new Amazon operations staff.
+面向亚马逊美国站新人运营的内部培训看板，覆盖平台基础、账号合规、Listing、图片与 A+、促销广告、售后、数据复盘和案例处理。
 
-## Pages
+## 页面
 
-- Dashboard
-- Training Roadmap
-- Amazon Modules
-- SOP Library
-- Practice Tasks
-- Quiz & Assessment
+- 首页看板
+- 培训路线
+- 课程模块
+- SOP流程
+- 实战任务
+- 测验考核
+- 案例库
 
-## Stack
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- shadcn/ui-style components
-- lucide-react icons
-
-## Run Locally
+## 运行
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+打开 `http://localhost:3000`。
