@@ -22,7 +22,7 @@ export default function SopPage() {
     const normalizedQuery = query.trim().toLowerCase();
     return sopItems.filter((item) => {
       const matchesTag = activeTag === "全部" || item.tags.includes(activeTag) || item.category === activeTag;
-      const searchable = [item.title, item.description, item.category, ...item.tags]
+      const searchable = [item.title, item.description, item.category, ...item.tags, ...item.steps]
         .join(" ")
         .toLowerCase();
       const matchesQuery = !normalizedQuery || searchable.includes(normalizedQuery);
